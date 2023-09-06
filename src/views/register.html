@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/stylesRegister.css">
+    <title>Registrate</title>
+</head>
+<body>
+    <header>
+        <div class="header-sup">
+            <div class="logo">
+                <a href="/"><img src="images/logo-mercado-liebre.svg" width="360" alt="Logo"></a>
+            </div>
+            <form class="searchbar" action="#" method="get">
+                <input class="input" placeholder="Buscar productos, marcas... " />
+                <button type="submit" title="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <p><i class="fa-solid fa-hand-holding-dollar"></i> Compra en cuotas y sin tarjeta de credito</p>
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul>
+                <li><a href="/register">Creá tu cuenta <i class="fa-regular fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <li><a href="">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+            </ul>
+        </nav>
+        <div class="burger-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <main>
+        <h2>Registro</h2>
+        <section class="main-register">
+            <form action="/" method="get" class="register">
+
+                <input type="text" name="name" id="name" placeholder="Nombre y apellido" required>
+                <input type="text" name="username" id="username" placeholder="Nombre de usuario" required>
+                <input type="text" name="email" id="email" placeholder="Email" required>
+
+                <h5>Fecha de nacimiento</h5>
+                <input type="date" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa">
+                <input type="text" name="address" id="address" placeholder="Dirección">
+
+                <h5>Perfil de usuario</h5>
+                <div class="user">
+                    <input type="radio" name="userprofile" id="comprador" value="comprador" placeholder="comprador">
+                    <label for="Comprador"> Comprador </label>
+
+                    <input type="radio" name="userprofile" id="vendedor" value="vendedor" placeholder="vendedor">
+                    <label for="Vendedor"> Vendedor </label>
+                </div>
+
+                <h5>Intereses</h5>
+                <div class="categories">
+                    <div>
+                        <input type="checkbox"  name="category" id="electro" value="electro" >
+                        <label for="electro"> Electro</label>
+                    </div>
+                    <div>
+                        <input type="checkbox"  name="category" id="moda" value="moda" placeholder="si">
+                        <label for="electro"> Moda</label>
+                    </div>
+                    <div>
+                        <input type="checkbox"  name="category" id="hogar" value="hogar" placeholder="si">
+                        <label for="Hogar"> Hogar</label>
+                    </div>
+                    <div>
+                        <input type="checkbox"  name="category" id="juguetería" value="juguetería">
+                        <label for="juguetería">Juguetería</label>
+                    </div>
+                    <div>
+                        <input type="checkbox"  name="categorias" id="vida-sana" value="vida-sana">
+                        <label for="vida-sana">Vida sana</label>
+                    </div>
+                </div>
+
+                <input type="password" name="password" id="password" placeholder="Contraseña" required>
+
+                <input type="password" name="password-confirm" id="password-confirm" placeholder="Confirmar contraseña" required>
+
+                <h5>Foto de usuario</h5>
+
+                <input type="file" name="photo" id="photo" class="form__file__input" hidden accept=".jpg, .png">
+                <label for="photo" class="photo"> Elige una foto de perfil</label>
+
+                <input type="submit" value="Enviar" class="button">
+                <input type="reset" value="Borrar" class="button">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
